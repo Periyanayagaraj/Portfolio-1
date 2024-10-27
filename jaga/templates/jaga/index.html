@@ -1,0 +1,22 @@
+{% extends 'jaga/layout/main.html' %}
+{% block title %}
+Home
+{% endblock title %}
+{% block style %}
+<style>
+    spline-viewer {
+        width: 100vw;
+        height:100vh;
+    }
+    .home{
+  border: 1px solid white;
+}
+  </style>
+{% endblock style %}
+{% block content %}
+<div>
+    <div style="position: absolute; top: 0; left: 0; width: 100vw; height: 100vh; z-index: -2;">
+        <spline-viewer url="https://prod.spline.design/IWGdsKsJjSSckvnf/scene.splinecode"></spline-viewer>
+    </div>
+</div>
+{% endblock content %}
